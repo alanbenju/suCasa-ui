@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = process.env.API_URL || 'http://localhost:3000/'
+const URL = process.env.API_URL  || 'http://54.172.132.243:3001/'
 
 export async function createPresentation(presentation) {
     await axios.post(URL + 'presentations', presentation);
