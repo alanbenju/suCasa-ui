@@ -8,9 +8,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const element = document.createElement('meta')
-element.httpEquiv = "Content-Security-Policy"
-element.content = "upgrade-insecure-requests"
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
